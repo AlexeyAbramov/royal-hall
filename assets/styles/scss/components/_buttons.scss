@@ -20,7 +20,7 @@
     line-height: 25px;
     margin: 6px auto;
     cursor: pointer;
-    border-radius: none;
+    border-radius: 0;
     -webkit-border-radius: 0;
     &:hover {
       background-color: $hover-blue;
