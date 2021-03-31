@@ -263,6 +263,8 @@ a {
   line-height: 25px;
   margin: 6px auto;
   cursor: pointer;
+  border-radius: none;
+  -webkit-border-radius: 0;
 }
 .btn .link:hover {
   background-color: #41a4ff;
@@ -271,6 +273,7 @@ a {
 input[type] {
   -webkit-appearance: none;
   border-radius: 0;
+  -webkit-border-radius: 0;
 }
 
 input[type=text],
