@@ -33,14 +33,19 @@
     &__group {
       display: flex;
       justify-content: center;
-      gap: 25px;
+      // gap: 25px;
+    }
+    &__name,
+    &__tel,
+    &__btn {
+      margin-top: 25px;
     }
   }
   .slick-track {
     display: flex;
     gap: 30px;
   }
-  .slick-slider{
+  .slick-slider {
     margin-top: 70px;
   }
   .slick-slide {

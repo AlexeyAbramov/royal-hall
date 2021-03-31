@@ -861,7 +861,9 @@ input[type=submit]:focus {
 .menu .form-menu__group {
   display: flex;
   justify-content: center;
-  gap: 25px;
+}
+.menu .form-menu__name, .menu .form-menu__tel, .menu .form-menu__btn {
+  margin-top: 25px;
 }
 .menu .slick-track {
   display: flex;
@@ -1028,7 +1030,9 @@ input[type=submit]:focus {
 .reserve .form-reserve__group {
   display: flex;
   justify-content: center;
-  gap: 25px;
+}
+.reserve .form-reserve__name, .reserve .form-reserve__tel, .reserve .form-reserve__btn {
+  margin-top: 25px;
 }
 .reserve .form-reserve .reserve__label,
 .reserve .form-reserve .reserve__link {
