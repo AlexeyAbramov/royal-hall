@@ -1,0 +1,567 @@
+@media screen and (max-width: 1130px) {
+  .word {
+    font-size: 17vw;
+    top: 30px;
+    left: calc(50% - 380px);
+  }
+  //HEADER
+  .header {
+    &.active {
+      .nav-header {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: $white;
+        flex-direction: column;
+        padding: 10px;
+        &__logo {
+          top: 10px;
+          background: url(../../images/header/logo-blue.svg);
+        }
+        &__group {
+          order: 1;
+          height: 170px;
+        }
+        &__left,
+        &__right {
+          display: flex;
+          flex-direction: column;
+        }
+        &__left {
+          order: 2;
+        }
+        &__right {
+          order: 4;
+        }
+        &__link {
+          font-size: 20px;
+        }
+        &__social {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          order: 3;
+        }
+        &__phone {
+          width: 100%;
+        }
+        &__item_email {
+          display: block;
+        }
+        .social__text {
+          font-size: 16px;
+          line-height: 140%;
+          color: $dark-blue;
+        }
+        &__insta {
+          margin-top: 10px;
+        }
+        &__link,
+        .item__city {
+          color: $dark-blue;
+        }
+        &__item + .nav-header__item {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+    .nav-header {
+      &__left,
+      &__right {
+        display: none;
+      }
+      &__group {
+        width: 100%;
+      }
+      &__wrapper,
+      &__menu {
+        display: block;
+      }
+      &__tel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $gold;
+      }
+    }
+  }
+  .menu {
+    .form-menu {
+      &__group {
+        flex-direction: column;
+      }
+      &__data {
+        max-width: 300px;
+      }
+      &__checkmark {
+        left: 0;
+      }
+    }
+  }
+  //HALLS
+  .halls {
+    .word {
+      top: 120px;
+      left: 59px;
+    }
+    ._container {
+      padding: 0;
+    }
+    .list-halls {
+      &__item {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        &.list-halls__item {
+          margin-top: 20px;
+        }
+        &:nth-child(even) {
+          justify-content: flex-start;
+        }
+        .item {
+          &__bg {
+            position: static;
+            width: 100%;
+          }
+          &__image {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  //FEATURES
+  .features {
+    ._container {
+      padding: 0;
+    }
+    &__heading {
+      padding: 0 19px;
+    }
+    &__title {
+      font-size: 67px;
+      br {
+        display: none;
+      }
+    }
+    .word {
+      left: 0;
+    }
+    .list-features {
+      padding: 0 19px;
+      grid-template-columns: repeat(auto-fit, minmax(286px, auto));
+    }
+    &__content {
+      flex-direction: column;
+    }
+    .poster-features {
+      margin-left: 0;
+      margin-top: 20px;
+      padding: 60px;
+      height: 680px;
+      &__text {
+        margin-top: 10px;
+      }
+    }
+  }
+  //GALLERY
+  .gallery {
+    &__list {
+      padding: 0 10px;
+    }
+    .slick-track {
+      gap: 0;
+    }
+    .slick-arrow {
+      display: none;
+    }
+  }
+  //RESERVE
+  .reserve {
+    &__title {
+      font-size: 50px;
+    }
+    .form-reserve {
+      &__group {
+        flex-direction: column;
+      }
+      &__data {
+        max-width: 300px;
+      }
+      &__checkmark {
+        left: 0;
+      }
+    }
+  }
+  //CONTACTS
+  .contacts {
+    ._container {
+      padding: 0;
+    }
+    padding: 80px 0;
+    &__content {
+      flex-direction: column;
+      height: auto;
+    }
+    &__left {
+      width: 100%;
+      justify-content: center;
+    }
+    &__map {
+      position: static;
+      width: 100%;
+      background-size: cover;
+      height: 550px;
+    }
+    .left-contacts {
+      &__title {
+        font-size: 35px;
+      }
+      &__tel {
+        font-size: 23px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #popup {
+    .form-popup {
+      width: auto;
+      padding: 30px 10px 50px 20px;
+      &__title {
+        font-size: 30px;
+      }
+      &__text {
+        font-size: 16px;
+      }
+      &__data {
+        max-width: 85%;
+      }
+    }
+    .thanks-popup.active {
+      width: 100%;
+      padding: 46px 17px 0 10px;
+      left: 0;
+      background: url(../../images/popup/rose-photo-thanks-320.png) no-repeat
+          bottom right,
+        linear-gradient(143.48deg, #eff2f7 6.57%, #dde6f4 92.19%);
+      .thanks-popup {
+        &__word {
+          font-size: 51px;
+        }
+      }
+    }
+  }
+  .header {
+    .mid-header {
+      &__title {
+        font-size: 40px;
+      }
+      &__subtitle {
+        font-size: 30px;
+      }
+      &__text {
+        font-size: 16px;
+      }
+    }
+  }
+  .features {
+    &__title {
+      font-size: 53px;
+    }
+  }
+  .menu {
+    &__title {
+      font-size: 50px;
+    }
+    &__item {
+      width: 100%;
+    }
+    .slick-track {
+      gap: 0;
+    }
+    .slick-slider {
+      padding: 0 10px;
+    }
+  }
+  .atmosphere {
+    &__word {
+      top: 37px;
+      left: 20px;
+    }
+    padding: 80px 0;
+    &__title {
+      font-size: 40px;
+      br {
+        display: none;
+      }
+    }
+    &__content {
+      height: auto;
+    }
+  }
+  .reserve {
+    margin-top: 40px;
+    padding-bottom: 80px;
+  }
+  .gallery {
+    &__list {
+      padding: 0 10px !important;
+    }
+  }
+  .footer {
+    padding: 40px 0;
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .mid-footer {
+      order: 1;
+    }
+    .left-footer {
+      order: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0;
+      margin-top: 20px;
+      &__title {
+        text-align: center;
+      }
+      &__social {
+        margin-top: 10px;
+      }
+    }
+    .right-footer {
+      order: 2;
+      margin-top: 20px;
+      &__mail {
+        margin-top: 10px;
+      }
+      &__address {
+        margin-top: 10px;
+      }
+    }
+    .info-footer {
+      margin-top: 20px;
+      flex-direction: column;
+      &__policy,
+      &__info,
+      &__allrights {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 414px) {
+  .word {
+    top: 123px;
+    left: calc(50% - 316px);
+  }
+  #popup {
+    .form-popup {
+      padding: 30px 10px 50px 10px;
+    }
+    .thanks-popup.active {
+      padding: 46px 0 0 10px;
+      .thanks-popup {
+        &__title {
+          font-size: 30px;
+        }
+        &__text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  //HEADER
+  .header {
+    &.active {
+      .nav-header {
+        &__logo {
+          top: 0;
+          background: url(../../images/header/logo-blue.svg) no-repeat center
+            center / cover;
+        }
+        &__group {
+          height: 60px;
+        }
+        .item__city {
+          max-width: 181px;
+        }
+      }
+    }
+    .nav-header {
+      height: 70px;
+      &__logo {
+        width: 70px;
+        height: 70px;
+        left: calc(50% - 35px);
+        background: url(../../images/header/logo-white.svg) no-repeat center
+          center / cover;
+      }
+    }
+    &.scroll {
+      .mid-header {
+        margin: 239px auto 0 auto;
+      }
+    }
+  }
+  //HALLS
+  .halls {
+    &__title {
+      font-size: 60px;
+      line-height: 100%;
+    }
+    .list-halls {
+      .item {
+        &__content {
+          padding: 30px 10px;
+        }
+        &__title {
+          font-size: 40px;
+        }
+        &__count {
+          .guests {
+            font-size: 18px;
+          }
+        }
+        &__text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  //FEATURES
+  .features {
+    ._container {
+      padding: 0;
+    }
+    &__title {
+      font-size: 30px;
+      br {
+        display: none;
+      }
+    }
+    .word {
+      left: 0;
+    }
+    .list-features {
+      grid-template-columns: repeat(auto-fit, minmax(286px, 376px));
+    }
+    .poster-features {
+      margin-left: 0;
+      margin-top: 20px;
+      background: url(../../images/features/decoration-studio-320.jpg) no-repeat
+        center center/cover;
+      padding: 10px;
+      height: 380px;
+      &__title {
+        font-size: 30px;
+      }
+      &__text {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+  //MENU
+  .menu {
+    &__title {
+      font-size: 35px;
+    }
+  }
+  //ATMOSPHERE
+  .atmosphere {
+    &__heading {
+      padding: 0 20px;
+    }
+    &__title {
+      padding: 0 20px;
+    }
+  }
+  //RESERVE
+  .reserve {
+    &__title {
+      font-size: 35px;
+    }
+  }
+  //CONTACTS
+  .contacts {
+    .left-contacts {
+      padding: 32px 20px 20px 10px;
+      &__print {
+        margin-left: 0;
+      }
+    }
+    &__map {
+      background-position: 50%;
+    }
+  }
+  //GALLERY
+  .gallery {
+    &__title {
+      font-size: 35px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  ._container {
+    max-width: 320px;
+  }
+  .word {
+    left: 12px;
+    font-size: 55px;
+  }
+  //HEADER
+  .header {
+    &.scroll {
+      .mid-header {
+        margin: 84px auto 0 auto;
+      }
+    }
+    .mid-header {
+      margin: 24px auto 0 auto;
+    }
+  }
+  //HALLS
+  .halls {
+    padding: 80px 0;
+    &__heading {
+      margin: 0 auto;
+      max-width: 300px;
+    }
+    &__title {
+      font-size: 30px;
+      br {
+        display: none;
+      }
+    }
+  }
+  //MENU
+  .menu {
+    &__title {
+      font-size: 30px;
+      br {
+        display: none;
+      }
+    }
+  }
+  //RESERVE
+  .reserve {
+    &__title {
+      font-size: 30px;
+    }
+  }
+  //GALLERY
+  .gallery {
+    &__title {
+      font-size: 30px;
+    }
+  }
+}

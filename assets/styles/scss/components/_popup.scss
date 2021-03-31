@@ -1,0 +1,133 @@
+#popup {
+  position: fixed;
+  background-color: $bg-popup;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 9;
+  display: none;
+  &.active {
+    display: block;
+  }
+  .popup {
+    &__close {
+      background: url("../../images/popup/cross-blue-icon.svg") no-repeat center
+        center / cover;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      cursor: pointer;
+    }
+    &__word {
+      font-size: 70px;
+      line-height: 140%;
+      top: 26px;
+      left: 10px;
+      color: $decorate-popup-word-color;
+    }
+    &__checkmark {
+      left: 0;
+    }
+    &__label {
+      text-align: start;
+      padding-left: 30px;
+    }
+    &__thanks {
+      display: none;
+      &.active {
+        display: block;
+        position: absolute;
+        background: url("../../images/popup/rose-photo-thanks.png") no-repeat
+            center right,
+          $bg-popup-form;
+        width: 550px;
+        height: 250px;
+        top: calc(50% - 125px);
+        left: calc(50% - 280px);
+        padding: 50px 0 0 50px;
+        .thanks-popup {
+          &__title,
+          &__text {
+            position: relative;
+            z-index: 3;
+          }
+          &__title {
+            font-family: "Cormorant Garamond";
+            font-size: 40px;
+            line-height: 110%;
+            color: $dark-blue;
+          }
+          &__text {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 25px;
+            color: $dark-blue;
+          }
+          &__word {
+            font-size: 70px;
+            line-height: 140%;
+            color: $decorate-popup-word-color;
+            top: 31px;
+            left: 12px;
+            z-index: 2;
+          }
+          &__close {
+            background: url("../../images/popup/cross-blue-icon.svg") no-repeat
+              center center / cover;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+            z-index: 999;
+          }
+        }
+      }
+    }
+  }
+  .form-popup {
+    display: none;
+    &.active {
+      display: flex;
+    }
+    position: relative;
+    width: 550px;
+    padding: 50px 169px 56px 50px;
+    margin: 0 auto;
+    top: calc(50% - 260px);
+    z-index: 2;
+    flex-direction: column;
+    background: url("../../images/popup/rose-photo.png") no-repeat bottom right /
+        cover,
+      $bg-popup-form;
+    background-size: 60%;
+    &__title {
+      font-family: "Cormorant Garamond";
+      font-size: 40px;
+      line-height: 110%;
+      color: $dark-blue;
+    }
+    &__text {
+      display: block;
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 25px;
+      color: $dark-blue;
+    }
+    &__group {
+      display: flex;
+      flex-direction: column;
+    }
+    &__name,
+    &__tel {
+      margin-top: 20px;
+    }
+    &__btn {
+      margin-top: 30px;
+    }
+  }
+}

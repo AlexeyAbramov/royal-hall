@@ -1,0 +1,100 @@
+.gallery {
+  padding: 150px 0;
+  background-color: $bg-light-blue;
+  position: relative;
+  &__word {
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+  }
+  &__heading {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    font-family: "Cormorant Garamond";
+    font-size: 60px;
+    line-height: 100%;
+    color: $dark-blue;
+  }
+  &__content {
+    margin-top: 70px;
+  }
+  &__list {
+    position: relative;
+    z-index: 3;
+    .slick-track {
+      display: flex;
+      gap: 110px;
+    }
+    .slick-slide {
+      width: 825px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__next,
+  &__prev {
+    width: 40px;
+    height: 40px;
+    background-color: $gold;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 5;
+  }
+  .arrow {
+    cursor: pointer;
+    &:hover {
+      background-color: $hover-gold;
+    }
+  }
+  .prev__arrow,
+  .next__arrow {
+    display: block;
+    width: 9px;
+    height: 9px;
+  }
+  .prev__arrow {
+    border-left: 1px solid $white;
+    border-bottom: 1px solid $white;
+  }
+  .next__arrow {
+    border-right: 1px solid $white;
+    border-top: 1px solid $white;
+  }
+  &__prev {
+    top: 248px;
+    left: calc(50% - 490px);
+  }
+  &__next {
+    top: 248px;
+    right: calc(50% - 490px);
+  }
+  .slick-dots {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto 0 auto;
+    & .slick-active button {
+      background-color: $gold;
+    }
+  }
+  .slick-dots li button {
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    font-size: 0;
+    width: 7px;
+    height: 7px;
+    border: 1px solid $gold;
+    padding: 0;
+    transform: rotate(45deg);
+    &:focus {
+      outline: none;
+    }
+  }
+}

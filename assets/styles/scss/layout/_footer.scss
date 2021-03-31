@@ -1,0 +1,95 @@
+.footer {
+  padding: 93px 0;
+  background-color: $bg-light-blue;
+  color: $dark-blue;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    padding-top: 25px;
+  }
+  .left-footer {
+    max-width: 239px;
+    &__title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+    }
+    &__social {
+      display: block;
+      margin-top: 20px;
+    }
+    .studio {
+      margin-top: 21px;
+      display: flex;
+      align-items: center;
+      &__logo {
+        width: 36px;
+      }
+      &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .mid-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    &__tel {
+      display: block;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 140%;
+      color: $dark-blue;
+    }
+    &__mail {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 140%;
+      color: $dark-blue;
+    }
+    &__address {
+      display: block;
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      color: $dark-blue;
+    }
+  }
+  .info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    &__policy {
+      display: block;
+      color: $dark-blue;
+      font-size: 14px;
+      line-height: 140%;
+    }
+    &__info {
+      font-size: 14px;
+      line-height: 140%;
+    }
+    &__allrights {
+      display: block;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}

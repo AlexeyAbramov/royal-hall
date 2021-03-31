@@ -1,0 +1,12 @@
+.word{
+    font-family: "Bikham Cyr Script";
+    font-size: 250px;
+    line-height: 140%;
+    color: $decorate-words-color;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 518px);
+    z-index: -2;
+    user-select: none;
+}

@@ -1,0 +1,142 @@
+.header {
+  height: 100vh;
+  color: $white;
+  &.scroll {
+    .mid-header {
+      margin: 300px auto 0 auto;
+    }
+  }
+  &__video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    object-fit: fill;
+  }
+  &__inner {
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+  }
+  &-top {
+    padding-top: 40px;
+    &.sticky {
+      background-color: $bg-light-blue;
+      position: fixed;
+      width: 100vw;
+      top: 0;
+      transition: background-color 0.4s;
+      padding: 11px 0;
+      .nav-header {
+        &__link,
+        .item__city {
+          color: $dark-blue;
+        }
+        &__logo {
+          background-image: url("../../images/header/logo-blue.svg");
+        }
+      }
+    }
+  }
+  //NAV-HEADER
+  .nav-header {
+    width: 100%;
+    height: 144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &__group {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      max-width: 473px;
+      .item__city {
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+    &__tel,
+    &__menu {
+      display: none;
+    }
+    &__item + .nav-header__item {
+      margin-left: 40px;
+    }
+    &__item_email{
+      display: none;
+    }
+    &__link {
+      color: $white;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      &:hover {
+        color: $hover-blue;
+      }
+    }
+    &__social{
+      display: none;
+    }
+    &__phone {
+      display: block;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 140%;
+      width: 136px;
+    }
+    &__logo {
+      width: 141px;
+      height: 144px;
+      position: absolute;
+      left: calc(50% - 70px);
+      background: url("../../images/header/logo-white.svg");
+    }
+  }
+  //MID-HEADER
+  .mid-header {
+    margin: 127px auto 0 auto;
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__heading {
+      max-width: 894px;
+      text-align: center;
+    }
+    &__title,
+    &__subtitle {
+      font-family: "Cormorant Garamond";
+    }
+    &__title {
+      font-size: 80px;
+      line-height: 110%;
+      letter-spacing: 0.02em;
+    }
+    &__subtitle {
+      font-size: 60px;
+      line-height: 100%;
+    }
+    &__text {
+      margin-top: 35px;
+      max-width: 730px;
+      font-size: 22px;
+      line-height: 160%;
+      text-align: center;
+    }
+    &__reserve {
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.contacts {
+  padding: 150px 0;
+  &__content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 550px;
+  }
+  .left-contacts {
+    background-color: $bg-light-blue;
+    padding: 66px 44px 44px 40px;
+    display: flex;
+    &__wrapper {
+      max-width: 247px;
+    }
+    &__title {
+      font-family: "Cormorant Garamond";
+      font-size: 60px;
+      line-height: 100%;
+      color: $dark-blue;
+    }
+    &__tel {
+      display: block;
+      margin-top: 19px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 140%;
+      color: $dark-blue;
+    }
+    &__mail {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 140%;
+      color: $dark-blue;
+    }
+    &__address {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      color: $dark-blue;
+      margin-top: 10px;
+    }
+    &__print {
+      display: flex;
+      align-items: flex-end;
+      margin-left: 46px;
+    }
+  }
+  &__map {
+    background: url("../../images/contacts/map.png") no-repeat center center;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 849px;
+    height: inherit;
+  }
+}

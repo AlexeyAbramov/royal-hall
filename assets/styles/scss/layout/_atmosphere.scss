@@ -1,0 +1,25 @@
+.atmosphere {
+  padding: 150px 0;
+  position: relative;
+  &__word {
+    top: 30px;
+    left: calc(50% - 538px);
+  }
+  &__heading {
+    text-align: center;
+  }
+  &__title {
+    font-family: "Cormorant Garamond";
+    font-size: 60px;
+    line-height: 100%;
+    color: $dark-blue;
+  }
+  &__content {
+    height: 551px;
+    overflow: hidden;
+    margin-top: 70px;
+  }
+  &__bg {
+    width: 100%;
+  }
+}

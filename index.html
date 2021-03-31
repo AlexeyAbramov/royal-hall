@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Royal Hall</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <video class="header__video" loop autoplay muted>
+            <source src="./assets/video/RH.mp4">
+        </video>
+        <div class="header__inner">
+            <div class="header-top">
+                <nav class="header__nav nav-header _container">
+                    <ul class="nav-header__left">
+                        <li class="nav-header__item"><a href="#" class="nav-header__link">Преимущества</a></li>
+                        <li class="nav-header__item"><a href="#" class="nav-header__link">Меню</a></li>
+                        <li class="nav-header__item"><a href="#" class="nav-header__link">Видео</a></li>
+                        <li class="nav-header__item"><a href="#" class="nav-header__link">Галерея</a></li>
+                    </ul>
+                    <div class="nav-header__group">
+                        <div class="nav-header__tel">
+                            <a href="tel:+79658858930"><img src="./assets/images/header/phone-icon.svg"
+                                    alt="nav-header__phone"></a>
+                        </div>
+                        <div class="nav-header__logo">
+                            <div class="nav-header__img"></div>
+                        </div>
+                        <div class="nav-header__wrapper">
+                            <div class="nav-header__menu" id="nav-header__menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-header__social">
+                        <span class="social__text">Присоединяйтесь к нам в инстаграм!</span>
+                        <a class="nav-header__insta" href="https://www.instagram.com/royal_hall_64/" target="_blank"
+                            class="nav-header__link"><img src="./assets/images/header/instagram-icon.svg"
+                                alt="instagram-icon"></a>
+                    </div>
+                    <ul class="nav-header__right">
+                        <li class="nav-header__item"><a href="#" class="nav-header__link">Контакты</a></li>
+                        <li class="nav-header__item"><a href="tel:+79658858930"
+                                class="nav-header__link nav-header__phone">+7 965
+                                885-89-30</a></li>
+                        <li class="nav-header__item nav-header__item_email ">
+                            <a class="nav-header__link nav-header__email"
+                                href="mailto:royal-hall-64@mail.ru">royal-hall-64@mail.ru</a>
+                        </li>
+                        <li class="nav-header__item item__city">г. Саратов, Набережная
+                            Космонавтов 5а</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-mid mid-header">
+                <div class="mid-header__inner">
+                    <div class="mid-header__heading">
+                        <h1 class="mid-header__title">ROYAL HALL</h1>
+                        <h2 class="mid-header__subtitle">банкетный зал с видом на Волгу</h2>
+                    </div>
+                    <div class="mid-header__content">
+                        <p class="mid-header__text">Проводим свадьбы, юбилеи, дни рождения, фуршеты, корпоративы,
+                            семинары, тренинги, конференции. Сделаем мероприятие на любой удобный для вас бюджет, с
+                            индивидуальным подходом.</p>
+                    </div>
+                    <div class="mid-header__reserve">
+                        <div class="btn">
+                            <div class="link" id="reserve__header" href="#">Забронировать</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/HEADER-->
+    <!--MAIN-->
+    <div id="popup">
+        <form class="popup-form form-popup active">
+            <span class="popup__word word">Забронировать зал</span>
+            <div class="popup__close" id="popup__close"></div>
+            <div class="form-popup__group">
+                <h2 class="form-popup__title">Забронировать зал</h2>
+                <p class="form-popup__text">Оставьте заявку и мы с вами свяжемся</p>
+                <input class="form-popup__name" type="text" name="name" placeholder="Имя" required>
+                <input class="form-popup__tel" id="phone" type="tel" name="tel" placeholder="+7 999 99-99-99" required>
+                <div class="form-popup__btn btn"><input type="submit" href="#" class="form-popup__link link"
+                        value="Забронировать">
+                </div>
+
+            </div>
+            <label class="form-popup__data popup__label">Я даю согласие на <a class="form-popup__personal popup__link"
+                    href="/policy.html">обработку персональных
+                    данных</a>
+                <input class="form-popup__checkbox popup__checkbox" type="checkbox" name="personal" id="personal"
+                    checked required>
+                <span class="form-popup__checkmark popup__checkmark"></span>
+            </label>
+        </form>
+        <div class="popup__thanks thanks-popup">
+            <div class="thanks-popup__close" id="popup__close"></div>
+            <div class="thanks-popup__wrapper">
+                <span class="thanks-popup__word word">Спасибо за заявку!</span>
+
+            </div>
+            <h2 class="thanks-popup__title">Спасибо за заявку!</h2>
+            <p class="thanks-popup__text">Мы с вами свяжемся, ожидайте звонка</p>
+        </div>
+    </div>
+    <main class="main">
+        <!--HALLS-->
+        <section class="halls">
+            <span class="rest__word word">Отдыхайте</span>
+            <div class="halls__inner _container">
+                <div class="halls__heading">
+                    <h2 class="halls__title">Просторные залы для Вас<br> и ваших гостей</h2>
+                </div>
+                <div class="halls__content">
+                    <ul class="halls__list list-halls">
+                        <li class="list-halls__item">
+                            <div class="item__wrapper">
+                                <div class="item__content">
+                                    <div class="item__heading">
+                                        <h2 class="item__title">Зал 1</h2>
+                                    </div>
+                                    <div class="item__count">
+                                        <div class="line"></div>
+                                        <span class="guests">40-70 гостей</span>
+                                    </div>
+                                    <div class="item__text">
+                                        <p class="about">
+                                            В зале есть место для выездной регистрации, фото-зоны.<br>
+                                            Имеется свой проектор, экран, плазмы.
+                                        </p>
+                                    </div>
+                                    <div class="item__btn btn">
+                                        <div href="#" class="link">Забронировать</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__bg">
+                                <img class="item__image" src="./assets/images/halls/1.jpg" alt="hall__image">
+                            </div>
+                        </li>
+                        <li class="list-halls__item">
+                            <div class="item__wrapper">
+                                <div class="item__content">
+                                    <div class="item__heading">
+                                        <h2 class="item__title">Зал 2</h2>
+                                        <span class="item__floor">Двухэтажный</span>
+                                    </div>
+                                    <div class="item__count">
+                                        <div class="line"></div>
+                                        <span class="guests">50-150 гостей</span>
+                                    </div>
+                                    <div class="item__text">
+                                        <p class="about">
+                                            В зале есть место для выездной регистрации, фото-зоны.<br>
+                                            Имеется свой проектор, экран, плазмы.
+                                        </p>
+                                    </div>
+                                    <div class="item__btn btn">
+                                        <div href="#" class="link">Забронировать</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__bg">
+                                <img class="item__image" src="./assets/images/halls/2.jpg" alt="hall__image">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--/HALLS-->
+        <!--FEATURES-->
+        <section class="features">
+            <span class="organization__word word">Организация</span>
+            <div class="features__inner _container">
+                <div class="features__heading">
+                    <h2 class="features__title">
+                        Позаботимся о каждой детали<br> вашего праздника
+                    </h2>
+                </div>
+                <div class="features__content">
+                    <div class="features__left">
+                        <ul class="features__list list-features">
+                            <li class="list-features__item">
+                                <img src="./assets/images/features/fireworks-icon.svg" alt="features__icon">
+                                <p class="list-features__text">Возможность проведения фейерверков<br> и файер-шоу</p>
+                            </li>
+                            <li class="list-features__item">
+                                <img src="./assets/images/features/sale-icon.svg" alt="features__icon">
+                                <p class="list-features__text">Скидки на банкет в будние<br> дни и воскресенье -20%</p>
+                            </li>
+                            <li class="list-features__item">
+                                <img src="./assets/images/features/car-icon.svg" alt="features__icon">
+                                <p class="list-features__text">Собственная<br> парковка</p>
+                            </li>
+                            <li class="list-features__item">
+                                <img src="./assets/images/features/clients-icon.svg" alt="features__icon">
+                                <p class="list-features__text">Работаем с организациями<br> и корпоративными<br>
+                                    клиентами</p>
+                            </li>
+                            <li class="list-features__item">
+                                <img src="./assets/images/features/file-icon.svg" alt="features__icon">
+                                <p class="list-features__text">Работаем по официальным договорам, где прописаны все наши
+                                    условия без скрытых платежей. Любая форма оплаты</p>
+                            </li>
+                            <li class="list-features__item">
+                                <img src="./assets/images/features/drinks-icon.svg" alt="features__icon">
+                                <p class="list-features__text">Разрешаем принести<br> на банкет свой алкоголь, напитки,
+                                    фрукты, торт</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="features__poster poster-features">
+                        <h3 class="poster-features__title">Собственная<br> Студия декора</h3>
+                        <p class="poster-features__text">Дарим скидки на свадебный<br> декор при заказе банкета<br>
+                            в наших
+                            залах</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/FEATURES-->
+        <!--MENU-->
+        <section class="menu">
+            <span class="menu__word word">Меню</span>
+            <div class="menu__inner">
+                <div class="wrapper _container">
+                    <div class="menu__heading">
+                        <h2 class="menu__title">
+                            Получите меню на Ваше<br> мероприятие!
+                        </h2>
+                    </div>
+                    <form class="menu__form form-menu">
+                        <div class="form-menu__group">
+                            <input class="form-menu__name" type="text" name="name" placeholder="Имя" required>
+                            <input class="form-menu__tel" id="phone" type="tel" name="tel" placeholder="+7 999 99-99-99"
+                                required>
+                            <div class="form-menu__btn btn"><input type="submit" href="#" class="form-menu__link link"
+                                    value="Получить меню">
+                            </div>
+
+                        </div>
+                        <label class="form-menu__data personal__label">Я даю согласие на <a
+                                class="form-menu__personal personal__link" href="/policy.html">обработку персональных
+                                данных</a>
+                            <input class="form-menu__checkbox personal__checkbox" type="checkbox" name="personal"
+                                id="personal" checked required>
+                            <span class="form-menu__checkmark personal__checkmark"></span>
+                        </label>
+                    </form>
+                </div>
+                <div class="menu__gallery">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <img class="menu__image" src="./assets/images/menu/1.jpg" alt="">
+                        </li>
+                        <li class="menu__item">
+                            <img class="menu__image" src="./assets/images/menu/2.jpg" alt="">
+                        </li>
+                        <li class="menu__item">
+                            <img class="menu__image" src="./assets/images/menu/3.jpg" alt="">
+                        </li>
+                        <li class="menu__item">
+                            <img class="menu__image" src="./assets/images/menu/4.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--/MENU-->
+        <!--ATMOSPHERE-->
+        <section class="atmosphere">
+            <span class="atmosphere__word word">Атмосфера</span>
+            <div class="atmosphere__inner _container">
+                <div class="atmosphere__heading">
+                    <h2 class="atmosphere__title">Вдохновитесь атмосферой зала<br> Royal Hall</h2>
+                </div>
+                <div class="atmosphere__content">
+                    <video class="atmosphere__bg" loop autoplay muted>
+                        <source src="./assets/video/atmosphere.mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <!--/ATMOSPHERE-->
+        <!--GALLERY-->
+        <section class="gallery">
+            <span class="gallery__word word">Галерея</span>
+            <div class="gallery__inner">
+                <div class="gallery__heading">
+                    <h2 class="gallery__title">Потрясающий вид на Волгу<br> украсит любой праздник</h2>
+                </div>
+                <div class="gallery__content">
+                    <ul class="gallery__list">
+                        <li class="gallery__item">
+                            <img class="gallery__photo" src="./assets/images/gallery/1.jpg" alt="gallery__photo">
+                        </li>
+                        <li class="gallery__item">
+                            <img class="gallery__photo" src="./assets/images/gallery/2.jpg" alt="gallery__photo">
+                        </li>
+                        <li class="gallery__item">
+                            <img class="gallery__photo" src="./assets/images/gallery/3.jpg" alt="gallery__photo">
+                        </li>
+                        <li class="gallery__item">
+                            <img class="gallery__photo" src="./assets/images/gallery/4.jpg" alt="gallery__photo">
+                        </li>
+                        <li class="gallery__item">
+                            <img class="gallery__photo" src="./assets/images/gallery/5.jpg" alt="gallery__photo">
+                        </li>
+                        <li class="gallery__item">
+                            <img class="gallery__photo" src="./assets/images/gallery/6.jpg" alt="gallery__photo">
+                        </li>
+                        <li class="gallery__item">
+                            <img class="gallery__photo" src="./assets/images/gallery/7.jpg" alt="gallery__photo">
+                        </li>
+                        <li class="gallery__item">
+                            <img class="gallery__photo" src="./assets/images/gallery/8.jpg" alt="gallery__photo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--/GALLERY-->
+        <!--RESERVE-->
+        <section class="reserve">
+            <div class="reserve__inner _container">
+                <div class="reserve__heading">
+                    <h2 class="reserve__title">Ждём Вас в нашем бакетном<br> зале Royal Hall!</h2>
+                </div>
+                <form class="reserve__form form-reserve">
+                    <div class="form-reserve__group">
+                        <input class="form-reserve__name" type="text" name="name" placeholder="Имя" required>
+                        <input class="form-reserve__tel" id="phone" type="tel" name="tel" placeholder="+7 999 99-99-99"
+                            required>
+                        <div class="form-reserve__btn btn"><input type="submit" href="#" class="form-reserve__link link"
+                                value="Забронировать">
+                        </div>
+
+                    </div>
+                    <label class="form-reserve__data reserve__label">Я даю согласие на <a
+                            class="form-reserve__personal reserve__link" href="/policy.html">обработку персональных
+                            данных</a>
+                        <input class="form-reserve__checkbox reserve__checkbox" type="checkbox" name="reserve"
+                            id="reserve" checked required>
+                        <span class="form-reserve__checkmark reserve__checkmark"></span>
+                    </label>
+                </form>
+            </div>
+        </section>
+        <!--/RESERVE-->
+        <!--CONTACTS-->
+        <section class="contacts">
+            <div class="contacts__inner _container">
+                <div class="contacts__content">
+                    <div class="contacts__left left-contacts">
+                        <div class="left-contacts__wrapper">
+                            <h2 class="left-contacts__title">Контакты</h2>
+                            <a class="left-contacts__tel" href="tel:+79658858930" class="left-contacts__tel">+7 965
+                                885-89-30</a>
+                            <a class="left-contacts__mail" href="mailto:royal-hall-64@mail.ru">royal-hall-64@mail.ru</a>
+                            <span class="left-contacts__address">г. Саратов, Набережная Космонавтов 5а</span>
+                        </div>
+                        <div class="left-contacts__print"><img src="./assets/images/contacts/print.svg"
+                                alt="print__logo"></div>
+                    </div>
+                    <div class="contacts__map"></div>
+                </div>
+            </div>
+        </section>
+        <!--/CONTACTS-->
+    </main>
+    <!--/MAIN-->
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__inner _container">
+            <div class="footer__content">
+                <div class="footer__left left-footer">
+                    <span class="left-footer__title">Присоединяйтесь к нам<br> в инстаграм!</span>
+                    <a href="https://www.instagram.com/royal_hall_64/" target="_blank" class="left-footer__social"><img
+                            src="./assets/images/footer/instagram-icon.svg" alt="social__icon"></a>
+                    <div class="left-footer__studio studio">
+                        <div class="studio__logo"><img src="./assets/images/footer/studio-logo.png" alt="studio__logo">
+                        </div>
+                        <span class="studio__text">Разработка сайта —<br>
+                            СТУДИЯ «СТРОИМ САЙТ»</span>
+                    </div>
+                </div>
+                <div class="footer__mid mid-footer">
+                    <img class="mid-footer__logo" src="./assets/images/footer/logo-blue.svg" alt="footer__logo">
+                </div>
+                <div class="footer__right right-footer">
+                    <a class="right-footer__tel" href="tel:+79658858930" class="right-footer__tel">+7 965
+                        885-89-30</a>
+                    <a class="right-footer__mail" href="mailto:royal-hall-64@mail.ru">royal-hall-64@mail.ru</a>
+                    <span class="right-footer__address">г. Саратов, Набережная<br> Космонавтов 5а</span>
+                </div>
+            </div>
+            <div class="footer__info info-footer">
+                <a class="info-footer__policy" href="/policy.html">Политика конфиденциальности</a>
+                <span class="info-footer__info">2021@RoyalHall</span>
+                <span class="info-footer__allrights">Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+    <!--/FOOTER-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
