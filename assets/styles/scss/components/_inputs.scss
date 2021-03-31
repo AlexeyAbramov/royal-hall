@@ -1,3 +1,6 @@
+input[type] {
+  -webkit-appearance: none;
+}
 input[type="text"],
 input[type="tel"] {
   border: 1px solid $blue;
