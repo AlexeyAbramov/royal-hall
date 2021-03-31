@@ -495,6 +495,48 @@ input[type=submit]:focus {
   margin-top: 30px;
 }
 
+.header.header_policy {
+  height: 144px;
+  margin-top: 40px;
+}
+.header.header_policy .header-top {
+  padding-top: 0;
+}
+.header.header_policy .nav-header__logo {
+  background: url(../../images/header/logo-blue.svg) no-repeat center center/cover;
+}
+.header.header_policy .nav-header__link,
+.header.header_policy .nav-header .item__city {
+  color: #002d57;
+}
+
+.policy {
+  color: #002d57;
+  padding-bottom: 150px;
+}
+.policy__heading {
+  margin-top: 100px;
+}
+.policy__title {
+  font-family: "Cormorant Garamond";
+  font-size: 60px;
+  line-height: 100%;
+}
+.policy__content {
+  margin-top: 60px;
+}
+.policy__subtitle {
+  display: block;
+  font-size: 20px;
+  line-height: 140%;
+  margin-top: 50px;
+}
+.policy__text {
+  font-size: 18px;
+  line-height: 28.8px;
+  margin-top: 20px;
+}
+
 .header {
   height: 100vh;
   color: #fff;
@@ -1582,6 +1624,20 @@ input[type=submit]:focus {
 
   .gallery__title {
     font-size: 35px;
+  }
+
+  .header.header_policy {
+    margin-top: 0;
+  }
+  .header.header_policy .header-top.sticky {
+    background-color: #fff;
+  }
+  .header.header_policy .nav-header {
+    height: 110px;
+  }
+
+  .policy__title {
+    font-size: 34px;
   }
 }
 @media screen and (max-width: 320px) {

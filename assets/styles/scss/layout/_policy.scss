@@ -1,0 +1,42 @@
+.header.header_policy {
+  height: 144px;
+  margin-top: 40px;
+  .header-top {
+    padding-top: 0;
+  }
+  .nav-header {
+    &__logo {
+      background: url(../../images/header/logo-blue.svg) no-repeat center center / cover;
+    }
+    &__link,
+    .item__city {
+      color: $dark-blue;
+    }
+  }
+}
+.policy {
+  color: $dark-blue;
+  padding-bottom: 150px;
+  &__heading {
+    margin-top: 100px;
+  }
+  &__title {
+    font-family: "Cormorant Garamond";
+    font-size: 60px;
+    line-height: 100%;
+  }
+  &__content {
+    margin-top: 60px;
+  }
+  &__subtitle {
+    display: block;
+    font-size: 20px;
+    line-height: 140%;
+    margin-top: 50px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 28.8px;
+    margin-top: 20px;
+  }
+}
