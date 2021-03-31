@@ -270,6 +270,7 @@ a {
 
 input[type] {
   -webkit-appearance: none;
+  border-radius: 0;
 }
 
 input[type=text],
@@ -281,7 +282,7 @@ input[type=tel] {
   line-height: 140%;
   padding-left: 26px;
   width: 300px;
-  height: 60px;
+  height: 74px;
   outline: none;
 }
 
@@ -862,8 +863,8 @@ input[type=submit]:focus {
   display: flex;
   justify-content: center;
 }
-.menu .form-menu__name, .menu .form-menu__tel, .menu .form-menu__btn {
-  margin-top: 25px;
+.menu .form-menu__tel, .menu .form-menu__btn {
+  margin-left: 25px;
 }
 .menu .slick-track {
   display: flex;
@@ -1031,8 +1032,8 @@ input[type=submit]:focus {
   display: flex;
   justify-content: center;
 }
-.reserve .form-reserve__name, .reserve .form-reserve__tel, .reserve .form-reserve__btn {
-  margin-top: 25px;
+.reserve .form-reserve__tel, .reserve .form-reserve__btn {
+  margin-left: 25px;
 }
 .reserve .form-reserve .reserve__label,
 .reserve .form-reserve .reserve__link {
@@ -1281,6 +1282,10 @@ input[type=submit]:focus {
   .menu .form-menu__group {
     flex-direction: column;
   }
+  .menu .form-menu__tel, .menu .form-menu__btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
   .menu .form-menu__data {
     max-width: 300px;
   }
@@ -1362,6 +1367,10 @@ input[type=submit]:focus {
   }
   .reserve .form-reserve__group {
     flex-direction: column;
+  }
+  .reserve .form-reserve__tel, .reserve .form-reserve__btn {
+    margin-left: 0;
+    margin-top: 20px;
   }
   .reserve .form-reserve__data {
     max-width: 300px;

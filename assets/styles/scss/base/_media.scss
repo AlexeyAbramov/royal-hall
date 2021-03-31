@@ -94,6 +94,11 @@
       &__group {
         flex-direction: column;
       }
+      &__tel,
+      &__btn{
+        margin-left: 0;
+        margin-top: 20px;
+      }
       &__data {
         max-width: 300px;
       }
@@ -189,6 +194,11 @@
     .form-reserve {
       &__group {
         flex-direction: column;
+      }
+      &__tel,
+      &__btn{
+        margin-left: 0;
+        margin-top: 20px;
       }
       &__data {
         max-width: 300px;
