@@ -1547,6 +1547,9 @@ input[type=submit]:focus {
     font-size: 16px;
   }
 
+  .header.active .nav-header {
+    padding: 10px 10px 50px 10px;
+  }
   .header.active .nav-header__logo {
     top: 0;
     background: url(../../images/header/logo-blue.svg) no-repeat center center/cover;

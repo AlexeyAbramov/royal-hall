@@ -95,7 +95,7 @@
         flex-direction: column;
       }
       &__tel,
-      &__btn{
+      &__btn {
         margin-left: 0;
         margin-top: 20px;
       }
@@ -196,7 +196,7 @@
         flex-direction: column;
       }
       &__tel,
-      &__btn{
+      &__btn {
         margin-left: 0;
         margin-top: 20px;
       }
@@ -393,6 +393,7 @@
   .header {
     &.active {
       .nav-header {
+        padding: 10px 10px 50px 10px;
         &__logo {
           top: 0;
           background: url(../../images/header/logo-blue.svg) no-repeat center
