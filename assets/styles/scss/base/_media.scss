@@ -2,7 +2,9 @@
   .header {
     .nav-header {
       &__logo {
-        left: calc(50% - 70px);
+        width: 120px;
+        height: 122px;
+        left: calc(50% - 60px);
       }
     }
   }
