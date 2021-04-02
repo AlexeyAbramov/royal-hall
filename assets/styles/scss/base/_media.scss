@@ -27,7 +27,8 @@
         padding: 50px 10px;
         &__logo {
           top: 10px;
-          background: url(../../images/header/logo-blue.svg) no-repeat center center / cover;
+          background: url(../../images/header/logo-blue.svg) no-repeat center
+            center / cover;
         }
         &__group {
           order: 1;
@@ -43,9 +44,6 @@
         }
         &__right {
           order: 4;
-        }
-        &__link {
-          font-size: 1.6vw;
         }
         &__social {
           display: flex;
@@ -286,6 +284,7 @@
       &__left,
       &__right {
         display: none;
+        flex: none;
       }
       &__group {
         width: 100%;
@@ -428,6 +427,9 @@
   .header {
     &.active {
       .nav-header {
+        &__left {
+          height: 185px;
+        }
         padding: 10px 10px 50px 10px;
         &__logo {
           top: 0;
@@ -437,8 +439,15 @@
         &__group {
           height: 60px;
         }
+        &__item+.nav-header__item{
+          margin-top: 10px;
+        }
         .item__city {
           max-width: 181px;
+        }
+        &__social {
+          max-width: 53%;
+          text-align: center;
         }
       }
     }
