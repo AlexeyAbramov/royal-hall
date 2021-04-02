@@ -27,7 +27,7 @@
         padding: 50px 10px;
         &__logo {
           top: 10px;
-          background: url(../../images/header/logo-blue.svg);
+          background: url(../../images/header/logo-blue.svg) no-repeat center center / cover;
         }
         &__group {
           order: 1;
