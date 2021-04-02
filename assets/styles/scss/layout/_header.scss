@@ -33,7 +33,7 @@
           color: $dark-blue;
         }
         &__logo {
-          background-image: url("../../images/header/logo-blue.svg");
+          background: url("../../images/header/logo-blue.svg") no-repeat center center / cover;
         }
       }
     }
@@ -71,7 +71,7 @@
       display: none;
     }
     &__item + .nav-header__item {
-      margin-left: 40px;
+      margin-left: 35px;
     }
     &__item_email{
       display: none;
@@ -99,8 +99,8 @@
       width: 141px;
       height: 144px;
       position: absolute;
-      left: calc(50% - 70px);
-      background: url("../../images/header/logo-white.svg");
+      left: calc(50% - 30px);
+      background: url("../../images/header/logo-white.svg") no-repeat center center / cover;
     }
   }
   //MID-HEADER
