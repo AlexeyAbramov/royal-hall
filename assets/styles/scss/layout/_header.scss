@@ -103,8 +103,7 @@
     &__logo {
       width: 141px;
       height: 144px;
-      position: absolute;
-      left: calc(50% - 30px);
+      margin-left: 100px;
       background: url("../../images/header/logo-white.svg") no-repeat center center / cover;
     }
   }

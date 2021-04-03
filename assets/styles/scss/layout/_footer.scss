@@ -10,7 +10,7 @@
     padding-top: 25px;
   }
   .left-footer {
-    max-width: 239px;
+    flex: 50% 0 1;
     &__title {
       font-weight: 500;
       font-size: 16px;
@@ -41,12 +41,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    flex: 141px 0 0;
   }
   .right-footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     text-align: end;
+    flex: 50% 0 1;
     &__tel {
       display: block;
       font-weight: bold;
@@ -81,15 +83,20 @@
       color: $dark-blue;
       font-size: 14px;
       line-height: 140%;
+      flex: 50% 0 1;
     }
     &__info {
       font-size: 14px;
       line-height: 140%;
+      flex: 141px 0 0;
+      text-align: center;
     }
     &__allrights {
       display: block;
       font-size: 14px;
       line-height: 19px;
+      flex: 50% 0 1;
+      text-align: end;
     }
   }
 }

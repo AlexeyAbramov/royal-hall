@@ -10,6 +10,8 @@
     background-color: $bg-light-blue;
     padding: 66px 44px 44px 40px;
     display: flex;
+    position: absolute;
+    z-index: 5;
     &__wrapper {
       max-width: 247px;
     }
@@ -50,9 +52,7 @@
     }
   }
   &__map {
-    background: url("../../images/contacts/map.png") no-repeat center center;
     position: absolute;
-    z-index: -1;
     right: 0;
     width: 849px;
     height: inherit;

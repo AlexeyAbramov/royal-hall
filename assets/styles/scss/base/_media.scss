@@ -1,10 +1,8 @@
 @media screen and (max-width: 1100px) {
   .header {
     .nav-header {
-      &__logo {
-        width: 120px;
-        height: 122px;
-        left: calc(50% - 60px);
+      &__right{
+        margin-left: 32px;
       }
     }
   }
@@ -98,6 +96,9 @@
       }
       &__item + .nav-header__item {
         margin-left: 10px;
+      }
+      &__logo{
+        margin-left: 34px;
       }
     }
   }
@@ -239,8 +240,12 @@
       width: 100%;
       background-size: cover;
       height: 550px;
+      &>ymaps{
+        width: 100%!important;
+      }
     }
     .left-contacts {
+      position: static;
       &__title {
         font-size: 35px;
       }
@@ -300,6 +305,9 @@
         width: 40px;
         height: 40px;
         border: 1px solid $gold;
+      }
+      &__logo{
+        margin-left: 7px;
       }
     }
     .mid-header {
@@ -429,7 +437,6 @@
       .nav-header {
         padding: 10px 10px 50px 10px;
         &__logo {
-          top: 0;
           background: url(../../images/header/logo-blue.svg) no-repeat center
             center / cover;
         }

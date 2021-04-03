@@ -646,8 +646,7 @@ input[type=submit]:focus {
 .header .nav-header__logo {
   width: 141px;
   height: 144px;
-  position: absolute;
-  left: calc(50% - 30px);
+  margin-left: 100px;
   background: url("../../images/header/logo-white.svg") no-repeat center center/cover;
 }
 .header .mid-header__inner {
@@ -1058,6 +1057,8 @@ input[type=submit]:focus {
   background-color: #eff2f7;
   padding: 66px 44px 44px 40px;
   display: flex;
+  position: absolute;
+  z-index: 5;
 }
 .contacts .left-contacts__wrapper {
   max-width: 247px;
@@ -1098,9 +1099,7 @@ input[type=submit]:focus {
   margin-left: 46px;
 }
 .contacts__map {
-  background: url("../../images/contacts/map.png") no-repeat center center;
   position: absolute;
-  z-index: -1;
   right: 0;
   width: 849px;
   height: inherit;
@@ -1119,7 +1118,7 @@ input[type=submit]:focus {
   padding-top: 25px;
 }
 .footer .left-footer {
-  max-width: 239px;
+  flex: 50% 0 1;
 }
 .footer .left-footer__title {
   font-weight: 500;
@@ -1149,12 +1148,14 @@ input[type=submit]:focus {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  flex: 141px 0 0;
 }
 .footer .right-footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-align: end;
+  flex: 50% 0 1;
 }
 .footer .right-footer__tel {
   display: block;
@@ -1190,22 +1191,25 @@ input[type=submit]:focus {
   color: #002d57;
   font-size: 14px;
   line-height: 140%;
+  flex: 50% 0 1;
 }
 .footer .info-footer__info {
   font-size: 14px;
   line-height: 140%;
+  flex: 141px 0 0;
+  text-align: center;
 }
 .footer .info-footer__allrights {
   display: block;
   font-size: 14px;
   line-height: 19px;
+  flex: 50% 0 1;
+  text-align: end;
 }
 
 @media screen and (max-width: 1100px) {
-  .header .nav-header__logo {
-    width: 120px;
-    height: 122px;
-    left: calc(50% - 60px);
+  .header .nav-header__right {
+    margin-left: 32px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1290,6 +1294,9 @@ input[type=submit]:focus {
   }
   .header .nav-header__item + .nav-header__item {
     margin-left: 10px;
+  }
+  .header .nav-header__logo {
+    margin-left: 34px;
   }
 
   .menu .form-menu__group {
@@ -1412,6 +1419,12 @@ input[type=submit]:focus {
     background-size: cover;
     height: 550px;
   }
+  .contacts__map > ymaps {
+    width: 100% !important;
+  }
+  .contacts .left-contacts {
+    position: static;
+  }
   .contacts .left-contacts__title {
     font-size: 35px;
   }
@@ -1461,6 +1474,9 @@ input[type=submit]:focus {
     width: 40px;
     height: 40px;
     border: 1px solid #c4a861;
+  }
+  .header .nav-header__logo {
+    margin-left: 7px;
   }
   .header .mid-header__title {
     font-size: 40px;
@@ -1580,7 +1596,6 @@ input[type=submit]:focus {
     padding: 10px 10px 50px 10px;
   }
   .header.active .nav-header__logo {
-    top: 0;
     background: url(../../images/header/logo-blue.svg) no-repeat center center/cover;
   }
   .header.active .nav-header__group {
